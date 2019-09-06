@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Thermostat</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="src/thermostat.js"></script>
+    <script src="src/interface.js"></script>
+    <link rel="stylesheet" type="text/css" href="../style.css"> 
+    <style>
+    p {
+      width: 200px;
+      padding: 25px;
+      height: 85px;
+      float: none;
+      margin: 20px;
+      box-shadow: 10px 10px #666666;
+      border-style: solid;
+      border: #000000;
+    } </style>
+
+<style>
+    img {
+      width: 250px;
+      padding: 5px;
+      height: 160px;
+      float: none;
+      margin: 10px;
+      /* box-shadow: 5px 5px #666666; */
+      /* border: #000000; */
+      border-style: solid;
+    } 
+    
+    body { background-image: url("https://wallpaperaccess.com/full/448242.jpg")
+    }
+    
+    </style>
+       </head>
+  <body>
+    <section>
+      <center>
+          <section>
+              <h1>Current temperature: <span id="current-temperature"></span></h1>
+              <select id="current-city">
+                <option value="london">London</option>
+                <option value="paris">Paris</option>
+                <option value="edinburgh">Edinburgh</option>
+                <option value="berlin">Berlin</option>
+                <option value="amsterdam">Amsterdam</option>
+              </select>
+            </section>
+        <h1 id="temperature"></h1>
+      <p><b>Temperature:</b> 
+        <button style="outline: 0;" id="temp-up">+</button>
+        <button style="outline: 0;" id="temp-down">-</button>
+        <button id="temp-reset">reset</button>
+        <br>
+        <br>
+        <b>Power Save Mode is: </b><span id="power-saving"><b>ON</b></span>
+        <br>
+        <br>
+        <button id="psm-on">PSM on</button>
+        <button id="psm-off">PSM off</button>
+      </p>
+      <div><img id="theDiv" src="http://po.st/lSioAP" alt="You gonna bark all day little doggy?"></div></center>
+    </section>
+    <script src="js/thermostat.js"></script>
+  </body>
+</html>
